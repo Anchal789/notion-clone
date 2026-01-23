@@ -1,0 +1,141 @@
+:root {
+	--paper-background: #fff;
+	--default-background: #f6f5f4;
+	--border-color: #e5e5e5;
+	--xs-font-size: 9.5px;
+	--sm-font-size: 12px;
+	--md-font-size: 14px;
+	--lg-font-size: 16px;
+	--btn-primary-bg: #0075de;
+	--btn-primary-bg-hover: #015bab;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-size: var(--md-font-size);
+	font-weight: 500;
+	height: 100%;
+	overflow: auto;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+	color: rgba(0, 0, 0, 0.9);
+}
+
+#header-container {
+	position: sticky;
+	top: 0;
+	box-sizing: border-box;
+	background-color: var(--paper-background);
+	padding: 18px 25px 14px;
+	border-bottom: 1px solid transparent;
+	animation: header-border linear forwards;
+	animation-timeline: scroll();
+	animation-range: 1px 0px;
+}
+
+#navbar {
+	height: auto;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	justify-content: space-between;
+}
+
+#nav-links-section {
+	padding: 0;
+	margin: 0;
+}
+
+#nav-links-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: fit-content;
+}
+
+.nav-link-item {
+	padding: 5px 12px;
+	text-decoration: none;
+	line-height: 20px;
+}
+
+.expandable-nav-link {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.expandable-nav-link i {
+	font-size: var(--xs-font-size);
+}
+
+.nav-link-item:hover {
+	background-color: #0000000d;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#auth-links {
+	display: flex;
+	gap: 14px;
+	justify-content: end;
+	align-items: center;
+	margin-top: -3px;
+}
+
+.login-btn {
+	font-size: var(--md-font-size);
+}
+
+#notion-free-btn {
+	padding: 9px 14.5px 10px 14.5px;
+	background-color: var(--btn-primary-bg);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	font-size: var(--md-font-size);
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.hamburger-menu {
+	width: 22px;
+	height: 22px;
+	fill: currentColor;
+}
+
+@keyframes header-border {
+	to {
+		border-bottom-color: var(--border-color);
+		box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.3);
+	}
+}
+
+@media screen and (max-width: 840px) {
+	.login-btn {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	#header-container {
+		padding: 17px 16px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	#navbar {
+		grid-template-columns: 1fr 1fr;
+	}
+	#nav-links-section {
+		display: none;
+	}
+}
