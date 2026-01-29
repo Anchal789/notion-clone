@@ -8,7 +8,7 @@
 	--lg-font-size: 16px;
 	--btn-primary-bg: #0075de;
 	--btn-primary-bg-hover: #015bab;
-	--default-box-shadow: 0px 20px 50px #00000014,0px 6px 16px #0000000a
+	--default-box-shadow: 0px 20px 50px #00000014, 0px 6px 16px #0000000a;
 }
 
 html,
@@ -33,10 +33,11 @@ body {
 	box-sizing: border-box;
 	background-color: var(--paper-background);
 	padding: 18px 25px 14px;
-	border-bottom: 1px solid transparent;
+	/* border-bottom: 1px solid transparent; */
 	animation: header-border linear forwards;
 	animation-timeline: scroll();
 	animation-range: 1px 0px;
+	z-index: 10;
 }
 
 #navbar {
@@ -120,18 +121,106 @@ body {
 #main-container {
 	position: relative;
 	padding: 0 4rem;
+	z-index: 5;
 }
 
 #center-container {
-	margin: auto;
+	margin: 1rem auto;
 	max-width: 1252px;
 }
 
-#acme-inc{
+#acme-inc {
 	border: 1px solid var(--border-color);
 	border-radius: 8px;
 	box-shadow: var(--default-box-shadow);
 }
+
+#hero-animation-container {
+	margin: 10px auto;
+	width: 100%;
+}
+
+#hero-animation {
+	display: block;
+	margin: auto;
+	width: 768px;
+}
+
+#hero-am-text-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	max-width: 100%;
+	align-items: center;
+}
+
+#hero-am-heading {
+	text-wrap: balance;
+    text-align: center;
+	width: 38%;
+	font-size: 4.55rem;
+	margin: 10px 0 0 0;
+	font-weight: 700;
+	cursor: default;
+	line-height: 64px;
+}
+
+#hero-am-subheading {
+	text-align: center;
+	text-wrap: balance;
+	font-weight: 400;
+	font-size: 1.4rem;
+	max-width: 700px;
+	margin: 0;
+	cursor: default;
+	word-spacing: 0.17rem;
+	line-height: 28px;
+}
+
+#hero-am-buttons {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 1rem;
+	margin-top: 0.75rem;
+}
+
+#hero-am-buttons button {
+	padding: 1rem 1.25rem;
+	min-height: 2.875rem;
+	background-color: var(--btn-primary-bg);
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	font-size: var(--lg-font-size);
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#hero-am-buttons button:hover {
+	background-color: var(--btn-primary-bg-hover);
+}
+
+#hero-am-buttons button:last-child {
+	padding: 1rem 1.25rem;
+	min-height: 2.875rem;
+	background-color: #e6f3fe;
+	color: #005bab;
+	border: none;
+	border-radius: 8px;
+	font-size: var(--lg-font-size);
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#hero-am-buttons button:last-child:hover {
+	background-color: #f2f9ff;
+}
+
+#product-image-container{
+	margin-top: 2.2rem;
+}
+
 @keyframes header-border {
 	to {
 		border-bottom-color: var(--border-color);
