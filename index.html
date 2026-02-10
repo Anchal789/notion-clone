@@ -55,7 +55,7 @@
 						src="./assets/menu.svg"
 						class="hamburger-menu"
 						width="80"
-						alt="NSio"
+						alt="Menu"
 					/>
 				</section>
 			</nav>
@@ -68,11 +68,11 @@
 							class="hero-animation"
 							width="100%"
 							height="auto"
-							loop
-							muted
+							alt="Notion hero animation"
 						>
 							<img
 								src="https://www.notion.com/_next/image?url=%2Ffront-static%2Fpages%2Fhome%2Ffall%2Fhero%2Fhomepage-hero-animation-lf.png&w=3840&q=75"
+								alt="Notion hero animation"
 							/>
 						</picture>
 					</div>
@@ -287,8 +287,7 @@
 								<div class="bentoCarousel-content">
 									<div style="display: contents; box-sizing: border-box">
 										<div
-											class="bentoCarousel-content-buttons"
-											class="hand-off"
+											class="bentoCarousel-content-buttons hand-off"
 											aria-selected="true"
 										>
 											<h4>Hand off your busywork</h4>
@@ -299,8 +298,7 @@
 										</div>
 										<hr class="bentoCarousel-content-divider" />
 										<div
-											class="bentoCarousel-content-buttons"
-											class="collaborates"
+											class="bentoCarousel-content-buttons collaborates"
 											aria-selected="false"
 										>
 											<h4>Collaborates with your team</h4>
@@ -311,8 +309,7 @@
 										</div>
 										<hr class="bentoCarousel-content-divider" />
 										<div
-											class="bentoCarousel-content-buttons"
-											class="knows-everything"
+											class="bentoCarousel-content-buttons knows-everything"
 											aria-selected="false"
 										>
 											<h4>Knows everything you know</h4>
@@ -323,8 +320,7 @@
 										</div>
 										<hr class="bentoCarousel-content-divider" />
 										<div
-											class="bentoCarousel-content-buttons"
-											class="personalized"
+											class="bentoCarousel-content-buttons personalized"
 											aria-selected="false"
 										>
 											<h4>Personalized to you</h4>
@@ -339,6 +335,7 @@
 							<section class="bento-article-container">
 								<article
 									class="custom-agents-container sm-br-radius"
+									id="custom-agents-container"
 								>
 									<header class="custom-agent-header">
 										<div class="badged-heading">
@@ -385,7 +382,7 @@
 											<div class="customAgentVideoMask">
 												<video
 													class="customAgentsVideo"
-													class="customAgentsVideo"
+													id="customAgentsVideo"
 													src="https://www.notion.com/front-static/nosey/fall/clip_customAgents.mp4"
 													muted
 													playsinline
@@ -399,7 +396,10 @@
 										target="_blank"
 									></a>
 								</article>
-								<article class="enterprise-search-container sm-br-radius">
+								<article
+									id="enterprise-search-container"
+									class="enterprise-search-container sm-br-radius"
+								>
 									<header class="enterprise-search-header">
 										<h4>Enterprise Search</h4>
 										<div class="enterprise-search-heading">
@@ -425,7 +425,7 @@
 											<div class="enterpriseSearchVideoMask">
 												<video
 													class="enterpriseSearchVideo"
-													class="enterpriseSearchVideo"
+													id="enterpriseSearchVideo"
 													src="https://www.notion.com/front-static/nosey/fall/clip_noseyGlasses.mp4"
 													muted
 													playsinline
@@ -439,7 +439,10 @@
 										target="_blank"
 									></a>
 								</article>
-								<article class="ai-meetings-container sm-br-radius">
+								<article
+									id="ai-meetings-container"
+									class="ai-meetings-container sm-br-radius"
+								>
 									<header class="ai-meetings-header">
 										<h4>AI Meetings Notes</h4>
 										<div class="ai-meetings-heading">
@@ -470,7 +473,7 @@
 											<div class="aiSettingsVideoMask">
 												<video
 													class="aiSettingsVideo"
-													class="aiSettingsVideo"
+													id="aiSettingsVideo"
 													src="https://www.notion.com/front-static/nosey/fall/clip_noseyHeadset.mp4"
 													muted
 													playsinline
@@ -484,7 +487,10 @@
 										target="_blank"
 									></a>
 								</article>
-								<article class="flexible-workflows-container sm-br-radius">
+								<article
+									id="flexible-workflows-container"
+									class="flexible-workflows-container sm-br-radius"
+								>
 									<header class="flexible-workflows-header">
 										<h4>Flexible workflows</h4>
 										<div class="flexible-workflows-heading">
@@ -504,6 +510,7 @@
 												srcset="
 													https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F1otpQA1FoIQMawmCBm2UgG%2Fe2eb294dd5b0d34c7ed9e3946002470c%2Fen-US-FlexibleWorkflows-a-mobile.jpg&w=1920&q=75
 												"
+												media="(max-width: 959px)"
 											/>
 											<img
 												src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F6lUfkjeFFFGQf7gJHNliJB%2Fb93a13cd68fcb9ea46ebb2fbceac3b22%2Fen-US-FlexibleWorkflows-a.jpg&w=1920&q=75"
@@ -526,7 +533,7 @@
 											<div class="flexibleWorkflowVideoMask">
 												<video
 													class="flexibleWorkflowsVideo"
-													class="flexibleWorkflowsVideo"
+													id="flexibleWorkflowsVideo"
 													src="https://www.notion.com/front-static/nosey/fall/clip_noseySearching.mp4"
 													muted
 													playsinline
@@ -694,7 +701,7 @@
 							<div class="openAi-quote-block">
 								<img
 									src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2FjWkCPMAAj0Av69704DQoB%2F84499b606028b276e0bf94c238f07097%2FOpenAI-black-wordmark-cropped.png&w=1200&q=75"
-									alt=""
+									alt="OpenAI"
 								/>
 								<p>
 									There’s power in a single platform where you can do all your
@@ -710,7 +717,7 @@
 						<div class="open-ai-image">
 							<img
 								src="https://www.notion.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fspoqsaf9291f%2F28Oz1efdtQCyLG1ocTdmHK%2F0dfc68573f753a757caea09a929baa07%2Fimage.png&w=1200&q=75"
-								alt=""
+								alt="OpenAI"
 							/>
 						</div>
 					</div>
@@ -1473,7 +1480,7 @@
 									Download for Windows
 								</a>
 								<a
-									href="https://www.notion.com/desktop/windows/download?from=marketing&pathname=%2F&tid=4569f2cc03c342f08e6a8d3f2606212a"
+									href="https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281"
 									class="ios-download"
 									target="_blank"
 								>
@@ -1825,38 +1832,40 @@
 			</div>
 			<div class="notion-links-container">
 				<ul class="notion-links-content">
-					<h6>Company</h6>
-					<a href="">About us</a>
-					<a href="">Careers</a>
-					<a href="">Security</a>
-					<a href="">Status</a>
-					<a href="">Terms & privacy</a>
-					<a href="">Your privacy rights</a>
+					<li><h6>Company</h6></li>
+					<li><a href="">About us</a></li>
+					<li><a href="">Careers</a></li>
+					<li><a href="">Security</a></li>
+					<li><a href="">Status</a></li>
+					<li><a href="">Terms & privacy</a></li>
+					<li><a href="">Your privacy rights</a></li>
 				</ul>
 				<ul class="notion-links-content">
-					<h6>Download</h6>
-					<a href="">IOS & Android</a>
-					<a href="">Mac & Windows</a>
-					<a href="">Mail</a>
-					<a href="">Calendar</a>
-					<a href="">Web Clipper</a>
+					<li><h6>Download</h6></li>
+					<li><a href="">IOS & Android</a></li>
+					<li><a href="">Mac & Windows</a></li>
+					<li><a href="">Mail</a></li>
+					<li><a href="">Calendar</a></li>
+					<li><a href="">Web Clipper</a></li>
 				</ul>
 				<ul class="notion-links-content">
-					<h6>Resources</h6>
-					<a href="">Help center</a>
-					<a href="">Pricing</a>
-					<a href="">Blog</a>
-					<a href="">Community</a>
-					<a href="">Integrations</a>
-					<a href="">Templates</a>
-					<a href="">Partner programs</a>
+					<li><h6>Resources</h6></li>
+					<li><a href="">Help center</a></li>
+					<li><a href="">Pricing</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Community</a></li>
+					<li><a href="">Integrations</a></li>
+					<li><a href="">Templates</a></li>
+					<li><a href="">Partner programs</a></li>
 				</ul>
 				<ul class="notion-links-content">
-					<h6>Notion for</h6>
-					<a href="">Enterprise</a>
-					<a href="">Small Business</a>
-					<a href="">Personal</a>
-					<h5>Explore more <span>→</span></h5>
+					<li><h6>Notion for</h6></li>
+					<li><a href="">Enterprise</a></li>
+					<li><a href="">Small Business</a></li>
+					<li><a href="">Personal</a></li>
+					<li>
+						<h5>Explore more <span>→</span></h5>
+					</li>
 				</ul>
 			</div>
 		</footer>

@@ -2468,7 +2468,7 @@ footer {
 	margin-inline-start: 0.2em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 840px) {
 	.login-btn {
 		display: none;
 	}
