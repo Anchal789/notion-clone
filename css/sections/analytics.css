@@ -16,7 +16,6 @@
 .analytics-headings {
 	display: flex;
 	flex-direction: column;
-	gap: 1.25rem;
 }
 
 .analytics-headings h2 {
@@ -24,17 +23,25 @@
 	line-height: var(--lh-lg);
 	text-wrap: balance;
 	min-width: 628px;
+	cursor: default;
 }
 
 .analytics-headings p {
 	font-weight: 400;
 	letter-spacing: 0;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	margin-top: 1.25rem;
+	cursor: default;
 }
 
 .analytics-headings a {
 	text-decoration: none;
 	color: var(--btn-primary-bg);
 	font-weight: 400;
+	margin-top: 1rem;
+	line-height: 24px;
 }
 
 .analytics-headings a:hover {
@@ -86,6 +93,10 @@
 	padding: var(--space-xs) 0;
 }
 
+.checkbox-container input{
+	margin-top: .25rem;
+}
+
 .checkbox-container label {
 	font-size: var(--font-size-base);
 	font-weight: 600;
@@ -121,10 +132,10 @@
 	gap: 4px;
 }
 
-.team-size-section p {
+.team-size-section label {
 	font-size: var(--font-size-base);
 	font-weight: 600;
-
+	line-height: 24px;
 	cursor: default;
 }
 
@@ -149,14 +160,13 @@
 .monthly-savings-section p {
 	font-size: var(--font-size-base);
 	font-weight: 600;
-
+	line-height: 24px;
 	cursor: default;
 }
 
 .monthly-savings-section h2 {
 	font-size: var(--font-size-md-heading);
 	font-weight: 700;
-
 	cursor: default;
 }
 
@@ -169,7 +179,7 @@
 .annual-savings-section p {
 	font-size: var(--font-size-base);
 	font-weight: 600;
-
+	line-height: 24px;
 	cursor: default;
 }
 

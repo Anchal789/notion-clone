@@ -97,7 +97,7 @@
 }
 
 @media screen and (max-width: 400px) {
-    .login-btn {
+	.login-btn {
 		display: none;
 	}
 }
@@ -109,12 +109,12 @@
 	.auth-links {
 		gap: 16px;
 	}
-	@keyframes header-border {
+	/* @keyframes header-border {
 		to {
 			border-bottom-color: var(--border-color);
-			/* box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.3); */
+			box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.3);
 		}
-	}
+	} */
 }
 
 @media screen and (max-width: 1199px) {

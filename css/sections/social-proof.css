@@ -35,9 +35,8 @@
 .social-proof-content {
 	padding: var(--space-lg);
 	max-width: var(--max-content-width);
-	border-radius: var(--space-sm);
 	margin: 0 auto;
-	border-radius: var(--radius-xl);
+	border-radius: .75rem;
 	background-color: var(--paper-background);
 	width: 100%;
 }

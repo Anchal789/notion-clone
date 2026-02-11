@@ -253,11 +253,10 @@
 
 .bentoCarousel-content-buttons {
 	padding: 16px;
-	margin: -1px 0;
 	cursor: pointer;
-    border: none;
-    background-color: var(--paper-background);
-    text-align: start;
+	border: none;
+	background-color: var(--paper-background);
+	text-align: start;
 }
 
 .bentoCarousel-content-buttons[aria-selected="false"]:hover {
@@ -375,7 +374,6 @@
 	margin-top: 24px;
 	margin-bottom: -16px;
 	border-top: 1px solid var(--color-border);
-	overflow: hidden;
 	box-shadow: var(--hover-box-shadow);
 	display: flex;
 }
@@ -391,6 +389,7 @@
 	width: 100%;
 	aspect-ratio: auto 1728 / 1206;
 	z-index: 2;
+	border-start-start-radius: 0.75rem;
 }
 
 .customAgentVideoMask {
@@ -842,6 +841,7 @@
 	}
 	.bentoCarousel-heading p {
 		font-size: 1.25rem;
+		max-width: 88%;
 	}
 	.bentoCarousel-heading {
 		flex-direction: row;
@@ -906,6 +906,7 @@
 	}
 	.enterprise-search-heading p {
 		font-size: 1.25rem;
+		max-width: 88%;
 	}
 	.enterprise-search-heading a {
 		align-self: flex-end;
@@ -986,7 +987,8 @@
 	.forbesQuote p {
 		font-size: var(--font-size-bento-title);
 		margin-bottom: 16px;
-		line-height: normal;
+		line-height: 28px;
+		min-height: 28px;
 	}
 	.flexible-workflows-header h4 {
 		line-height: normal;
@@ -1002,6 +1004,15 @@
 	}
 	.notion-3-container {
 		gap: 1rem;
+	}
+	.noseyhat {
+		inset-block-end: -4vw !important;
+	}
+	.enterprise-search-header h4 {
+		margin-bottom: 4px;
+	}
+	.ai-meetings-header h4 {
+		margin-bottom: 4px;
 	}
 }
 

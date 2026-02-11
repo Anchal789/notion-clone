@@ -16,26 +16,28 @@
 .aiUses-headings {
 	display: flex;
 	flex-direction: column;
-	gap: 1.25rem;
 }
 
 .aiUses-headings h2 {
 	font-size: var(--font-size-lg-heading);
 	line-height: var(--lh-lg);
 	text-wrap: balance;
-
 	min-width: 628px;
 }
 
 .aiUses-headings p {
 	font-weight: 400;
 	letter-spacing: 0;
+	line-height: 24px;
+	margin-top: 1.25rem;
 }
 
 .aiUses-headings a {
 	text-decoration: none;
 	color: var(--btn-primary-bg);
 	font-weight: 400;
+	line-height: 24px;
+	margin-top: 1rem;
 }
 
 .aiUses-headings a:hover {
