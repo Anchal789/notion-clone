@@ -181,7 +181,8 @@ footer {
   display: block;
   cursor: pointer;
   color: #31302e;
-
+  display: flex;
+  gap: .2rem;
   margin-top: 0.4rem;
   line-height: 1.35rem;
   text-align: left;
@@ -189,7 +190,7 @@ footer {
   text-decoration: none;
 }
 
-.notion-links-content a:hover {
+.notion-links-content a h5:hover {
   text-decoration: underline;
 }
 
@@ -200,10 +201,6 @@ footer {
   min-height: 20px;
   display: flex;
   align-items: center;
-}
-
-.notion-links-content h5 span {
-  margin-inline-start: 0.2em;
 }
 
 .explore-more {

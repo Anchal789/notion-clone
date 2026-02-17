@@ -42,11 +42,19 @@
   font-weight: 400;
   margin-top: 1rem;
   line-height: 24px;
+  width: fit-content;
 }
 
 .analytics-headings a:hover {
-  text-decoration: underline;
   color: #00396b;
+}
+
+.analytics-headings a span:first-child:hover{
+  text-decoration: underline;
+}
+
+.analytics-headings a span{
+  text-decoration: none;
 }
 
 .analytics-header-img-container {

@@ -123,6 +123,10 @@
   text-decoration: none;
 }
 
+.ios-download:hover {
+  background-color: #005bab;
+}
+
 .ios-download svg {
   fill: currentColor;
 }
@@ -221,6 +225,10 @@
   align-items: center;
   border-radius: var(--space-sm);
   color: var(--color-text-main);
+}
+
+.notion-mail-calendar-content a:hover {
+  background-color: #f6f5f4;
 }
 
 .notion-mail-calendar-heading h3 {
