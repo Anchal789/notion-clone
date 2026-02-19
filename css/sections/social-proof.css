@@ -21,6 +21,7 @@
   line-height: var(--lh-lg);
   text-wrap: balance;
   min-width: min(628px, 100%);
+  color: var(--color-text-headings);  
 }
 
 .social-proof-container {
@@ -77,6 +78,7 @@
   font-family: var(--lyon-font-family);
   flex-grow: 1;
   letter-spacing: -0.5px;
+  color: var(--color-text-headings);
 }
 
 .openAi-quote-block p::before {
@@ -116,6 +118,12 @@
 
 .open-ai-image {
   display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.open-ai-image:hover {
+  opacity: 0.9;
 }
 
 .open-ai-image img {
@@ -123,6 +131,22 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.open-ai-play-button {
+  --icon-size: 40px;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-color: var(--paper-background);
+  border-radius: 50%;
+  color: #615d59;
+  font-size: 22px;
 }
 
 .social-proof-card {
@@ -235,6 +259,7 @@
   font-size: var(--font-size-base);
   line-height: var(--lh-xs);
   font-weight: 400;
+  color: var(--color-text-main);
 }
 
 .social-proof-quoted-text {
@@ -254,6 +279,7 @@
   max-width: var(--max-content-width);
   margin: 16px auto 0 auto;
   position: relative;
+  overflow: clip;
 }
 
 .marquee {
