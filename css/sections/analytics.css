@@ -130,7 +130,7 @@
 .team-size-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: var(--space-lg);
+  column-gap: var(--space-lg);
   row-gap: var(--space-lg);
 }
 
